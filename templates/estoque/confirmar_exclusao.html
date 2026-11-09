@@ -1,0 +1,1 @@
+{% extends 'estoque/base.html' %}{% block content %}<section class="panel"><h1>Excluir {{ tipo }}?</h1><p>Confirma a exclusão de <b>{{ obj }}</b>?</p><form method="post">{% csrf_token %}<button class="btn red">Confirmar exclusão</button> <a class="btn muted" href="javascript:history.back()">Cancelar</a></form></section>{% endblock %}
